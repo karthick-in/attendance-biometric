@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff">
+  
+  <RelativeLayout android:id="@+id/header" 
+  android:layout_height="wrap_content" 
+  android:background="#c69ce2" 
+  android:layout_width="match_parent" 
+  android:layout_alignParentTop="true"
+  android:layout_alignParentRight="true">
+  
+      <TextView android:text="Registration page" 
+      android:id="@+id/textView1" 
+      android:layout_height="wrap_content"      
+      android:textSize="30sp" 
+      android:textColor="#000" 
+      android:layout_margin="5dp" 
+      android:layout_width="wrap_content">
+      </TextView>
+      
+  </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Developed by Internship-team"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </RelativeLayout>  
+    
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+        
+        <EditText android:layout_height="wrap_content" 
+        android:id="@+id/editTextempid" 
+        android:layout_alignParentTop="true" 
+        android:layout_below="@+id/header" 
+        android:layout_marginTop="20dp" 
+        android:layout_width="match_parent" 
+        android:hint="Employee ID" 
+        android:layout_centerInParent="true">
+        </EditText>
+        
+        <EditText android:layout_below="@+id/editTextempid" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextname" 
+        android:layout_width="wrap_content" 
+        android:hint="Name" 
+        android:layout_alignLeft="@+id/editTextempid" 
+        android:layout_alignRight="@+id/editTextempid">
+        </EditText>
+        
+        <Spinner android:layout_below="@+id/editTextname" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/editTextname" 
+        android:layout_alignRight="@+id/editTextname" 
+        android:id="@+id/spinnerrole">
+        </Spinner>
+        
+        <EditText android:layout_below="@+id/spinnerrole" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextpassword" 
+        android:layout_width="wrap_content" 
+        android:hint="Password"
+        android:layout_alignLeft="@+id/spinnerrole" 
+        android:layout_alignRight="@+id/spinnerrole" android:password="true">
+        </EditText>
+        
+        <EditText android:layout_below="@+id/editTextpassword" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/editTextemail" 
+        android:layout_width="wrap_content" 
+        android:hint="Email include @"
+        android:layout_alignLeft="@+id/editTextpassword" 
+        android:layout_alignRight="@+id/editTextpassword">
+        </EditText>
+        
+        <DatePicker android:layout_below="@+id/editTextemail" 
+        android:id="@+id/datePickerAtreg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/editTextemail" 
+        android:layout_alignRight="@+id/editTextemail">
+        </DatePicker>
+        
+        <Button android:layout_below="@+id/datePickerAtreg" 
+        android:layout_above="@+id/footer"
+        android:layout_height="wrap_content" 
+        android:id="@+id/btnsubmit" 
+        android:text="Submit" 
+        android:onClick="submit_data"
+        android:layout_width="wrap_content" 
+        android:layout_alignLeft="@+id/datePickerAtreg" 
+        android:layout_alignRight="@+id/datePickerAtreg">
+        </Button>          
+        
+         
+    </RelativeLayout>
+    
+  </RelativeLayout>
+ 

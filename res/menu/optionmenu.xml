@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="View attendance" android:id="@+id/item1">
+    </item>
+    <item android:id="@+id/item2" android:title="Registration">
+    </item>  
+    <item android:id="@+id/resetpass" android:title="Reset password">
+    </item>  
+    <item android:id="@+id/totins" android:title="Total no of INs">
+    </item>    
+    <item android:id="@+id/item3" android:title="Logout">
+    </item>
+</menu>

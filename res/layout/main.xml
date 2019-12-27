@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#c69ce2"
+        android:gravity="center" >
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Login page"
+            android:textColor="#000"
+            android:textSize="30sp"
+             />     
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Developed by Internship-team"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+       
+            
+        <EditText
+         android:layout_alignParentLeft="true" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/usernametb"         
+        android:text=""
+         android:layout_below="@+id/logintext" 
+         android:layout_width="fill_parent" 
+         android:hint="Username">
+        </EditText>
+        
+        <EditText android:layout_alignParentLeft="true" 
+        android:layout_height="wrap_content" 
+        android:id="@+id/passwordtb" 
+        android:layout_width="fill_parent" 
+        android:hint="Password" 
+        android:password="true"        
+        android:layout_below="@+id/usernametb">
+        </EditText>
+        
+        <Button android:layout_width="wrap_content" 
+        android:layout_below="@+id/passwordtb" 
+        android:layout_height="wrap_content" 
+        android:text="Login" 
+        android:id="@+id/loginbtn" 
+        android:layout_centerInParent="true" 
+        android:layout_alignParentLeft="false"
+        android:onClick="login_click" android:textSize="20dp">
+        </Button>
+    </RelativeLayout>
+ 
+</RelativeLayout>

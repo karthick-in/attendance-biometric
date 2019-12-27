@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ffffff">
+  
+  <RelativeLayout android:id="@+id/header" 
+  android:layout_height="wrap_content" 
+  android:background="#c69ce2" 
+  android:layout_width="match_parent" 
+  android:layout_alignParentTop="true"
+  android:layout_alignParentRight="true">
+  
+      <TextView android:text="View attendance" 
+      android:id="@+id/textView1" 
+      android:layout_height="wrap_content"      
+      android:textSize="30sp" 
+      android:textColor="#000" 
+      android:layout_margin="5dp" 
+      android:layout_width="wrap_content">
+      </TextView>
+      
+      <TextView android:id="@+id/textView2"      
+      android:layout_height="wrap_content" 
+      android:layout_below="@+id/textView1" 
+      android:layout_width="wrap_content" 
+      android:text="TextView" 
+      android:layout_alignLeft="@+id/textView1" 
+      android:layout_alignRight="@+id/textView1"
+      android:textColor="#000"
+      android:textSize="15sp">
+      </TextView>
+            
+      
+  </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+ 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Developed by Internship-team"
+            android:textColor="#000"
+            android:textSize="10sp" />
+    </RelativeLayout>  
+  	
+  	<RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header">
+        
+  		<TextView android:layout_height="wrap_content" 
+  		android:layout_alignParentTop="true" 
+  		android:layout_width="wrap_content" 
+  		android:id="@+id/textViewselctemployee" 
+  		android:text="\tSelect Employee" 
+  		android:textSize="20dp" android:layout_marginTop="20dp">
+  		</TextView>  	
+  			
+  		<EditText android:layout_below="@+id/textViewselctemployee" 
+  		android:layout_height="wrap_content" 
+  		android:layout_alignLeft="@+id/textViewselctemployee" 
+  		android:layout_alignRight="@+id/textViewselctemployee" 
+  		android:id="@+id/editTextdate" 
+  		android:layout_marginTop="30dp" 
+  		android:layout_width="match_parent" 
+  		android:layout_marginLeft="20dp">
+  		</EditText>
+  		
+  		<EditText android:id="@+id/editTexttodate" 
+  		android:layout_height="wrap_content" 
+  		android:layout_below="@+id/editTextdate" 
+  		android:layout_width="wrap_content" 
+  		android:layout_alignLeft="@+id/editTextdate" 
+  		android:layout_alignRight="@+id/editTextdate">
+  		</EditText>
+  		
+  		<ListView android:id="@+id/listView1"
+  		android:layout_below="@+id/editTexttodate" 
+  		android:layout_centerInParent="true" 
+  		android:layout_marginTop="20dp" 
+  		android:layout_width="match_parent" 
+  		android:layout_height="wrap_content">
+  		</ListView>
+  		
+  		<Button android:layout_toRightOf="@+id/editTextdate" 
+  		android:layout_height="wrap_content" 
+  		android:layout_width="wrap_content" 
+  		android:layout_alignTop="@+id/editTextdate" 
+  		android:layout_alignBottom="@+id/editTextdate" 
+  		android:id="@+id/datebtn" 
+  		android:layout_marginLeft="10dp" 
+  		android:text="Select From date">
+  		</Button>
+  		
+  		<Button android:layout_height="wrap_content" 
+  		android:layout_below="@+id/datebtn" 
+  		android:text="Select To date" 
+  		android:id="@+id/todatebtn" 
+  		android:layout_width="wrap_content" 
+  		android:layout_alignLeft="@+id/datebtn" 
+  		android:layout_alignRight="@+id/datebtn">
+  		</Button>
+  		
+  		<Spinner android:layout_width="wrap_content" 
+  		android:layout_height="wrap_content" 
+  		android:layout_alignParentRight="true" 
+  		android:layout_marginRight="32dp" 
+  		android:id="@+id/spinneremp" 
+  		android:layout_marginTop="20dp">
+  		</Spinner>		
+        
+        </RelativeLayout>
+</RelativeLayout>
